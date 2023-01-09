@@ -1,0 +1,19 @@
+:root{
+/* Color styles */
+--rouge: rgba(255, 45, 95, 1);
+--gris-foncé: rgba(65, 73, 104, 1);
+--gris-clair: rgba(87, 81, 101, 1);
+--blanc: rgba(255, 255, 255, 1);
+--lightblue: rgba(235, 237, 255, 1);
+
+/* Text-size styles */
+/* base size: body (14px) */
+--body: 14px;
+--h1: 20px;
+--h2: 16px;
+--légendes: 12px;
+--light-body: 14px;
+
+/* Effect styles */
+--ombre:  -1px 3px 2px rgba(65, 73, 104, 0.3);
+}
