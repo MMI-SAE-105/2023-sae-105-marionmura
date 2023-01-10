@@ -1,0 +1,19 @@
+footer{
+    background-color: var(--gris-clair);
+}
+
+.footer__p{
+    font-family: var(--font-body);
+    font-weight: 800;
+    margin-left:10px;
+    color:var(--lightblue);
+}
+
+.footericon__container{
+    display:flex;
+    justify-content:flex-start; 
+    margin-top:10px;
+    margin-right: 5px;
+    align-items: center;
+
+}
