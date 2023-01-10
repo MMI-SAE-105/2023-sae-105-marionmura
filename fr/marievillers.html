@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Néo-classicisme</title>
+
+    <script src="https://unpkg.com/alpinejs" defer></script>    
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <header class="header"  x-data="{menuIsOpen:false}">
+        <a href="index.html">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logo.svg" alt="logo du site"></a>
+        <a class="header__EN" href="../fr/index.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/iconen.svg" alt="icone EN">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu" x-show="menuIsOpen">                
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="exposition.html"><img class="menu__icone" src="../public/img/icons/peinceau.svg" alt="painting icone" >
+                        Néo-xposition</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="neoclassicisme.html">
+                        Qu'est-ce que le néo-classicisme ?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="frise.html">
+                        Frise des oeuvres</a>
+                </li>
+                <li>
+                    <p></p>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="mariecapet.html">
+                        Marie-Gabrielle Capet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="marievillers.html">
+                        Marie-Denise Villers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="franzxaver.html">
+                        Franz Xaver Winterhalter</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="antonio.html">
+                        Antonio Canova</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="https://www.grandpalais.fr/fr/billetterie"><img class="menu__icone" src="../public/img/icons/tag.svg" alt="painting icone" >
+                        Billetterie</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="contact.html">
+                        Contact</a>
+                </li>
+            </ul>
+
+
+            <div class="menuicon__container">
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+                </a>
+                
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="article_container">
+            <img class="img__article" src="../public/img/pagesarticle/marievillers.png" alt="image description">
+       
+            <section class="article__bulle"> 
+            <h1 class="h1__position">Marie-Denise Villers</h1>
+            <h2>Biographie </h2>
+                
+            <p>Marie-Denise Villers est issue d’une famille d’artistes. Fille de Charles Lemoine et de Marie-Anne Rousselle, elle vit avec sa famille dans l'ancien 1er arrondissement de Paris, rue Saint-Honoré-Traversière, près du Palais-Royal. Ses sœurs Marie-Victoire Lemoine et Marie-Élisabeth Gabiou sont également des portraitistes accomplies, de même que sa cousine Jeanne-Élisabeth Chaudet. On sait peu de choses sur sa jeunesse, mais il est probable que sa sœur aînée Marie-Victoire et sa cousine Jeanne-Élisabeth ont fait leurs débuts en peinture dès leur 20e année.
+            </p>
+            <h2>Ses distinctions récompensées</h2>
+            <p>En 1794, elle épouse l’étudiant en architecture Michel-Jean-Maximilien Villers. Elle expose trois œuvres au Salon de l’an VII (1799) en tant qu'élève de Girodet. Elle fréquente également les ateliers du baron Gérard et de Jacques-Louis David. Au nombre de ses œuvres présentées au Salon de 1799, on trouve un Portrait d’une femme peintre, auquel est attribué un prix d’encouragement de 1 500 francs, et que certains historiens de l'art ont parfois considéré comme un autoportrait.
+            </p>
+            <p>Elle expose au Salon de 1801 une Étude d’une jeune femme assise à la fenêtre, suivie, en 1802, par un tableau de genre, Un enfant dans son berceau, entraîné par les eaux de l’inondation du mois de Nivôse an X. Sa dernière œuvre connue est un Portrait de la duchesse d’Angoulême, exposé en 1814.</p>
+            <p><a href="https://fr.wikipedia.org/wiki/Marie-Denise_Villers"> suite de l'article sur l'artiste ici</a>
+            </p>
+           </section>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <p class="footer__p"><a class="footer__link" href="contact.html">Contactez-nous</a></p>
+        <p class="footer__p"><a class="footer__link" href="https://www.grandpalais.fr/fr/billetterie">Billetterie</a></p>
+        <p class="footer__p">Mentions Légales</p>
+        <div class="menu--separation">
+            <span class="menu__barresep"></span>
+        </div>
+        <p class="footer__p">Suivez-nous</p>
+
+        <div class="footericon__container">
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+            </a>
+            
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+            </a>
+
+            <a href="http://mmimontbeliard.com/">
+                <img class="menu__icon" src="../public/img/icons/MMI_dut_white_png.svg" alt="mmi icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
