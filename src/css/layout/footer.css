@@ -1,5 +1,6 @@
 footer{
     background-color: var(--gris-clair);
+    padding:10px;
 }
 
 .footer__p{
@@ -13,7 +14,12 @@ footer{
     display:flex;
     justify-content:flex-start; 
     margin-top:10px;
-    margin-right: 5px;
+    margin-left: 10px;
     align-items: center;
 
+}
+
+.footer__link{
+    text-decoration: none;
+    color: var(--lightblue);
 }

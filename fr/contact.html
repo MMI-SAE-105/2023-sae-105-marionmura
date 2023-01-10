@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <script src="https://unpkg.com/alpinejs" defer></script>    
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <header class="header"  x-data="{menuIsOpen:false}">
+        <a href="#">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logo.svg" alt="logo du site"></a>
+        <a class="header__EN" href="../EN/index.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/iconen.svg" alt="icone EN">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu" x-show="menuIsOpen">                
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="exposition.html"><img class="menu__icone" src="../public/img/icons/peinceau.svg" alt="painting icone" >
+                        Néo-xposition</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="neoclassicisme.html">
+                        Qu'est-ce que le néo-classicisme ?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="frise.html">
+                        Frise des oeuvres</a>
+                </li>
+                <li>
+                    <p></p>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="mariecapet.html">
+                        Marie-Gabrielle Capet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="marievillers.html">
+                        Marie-Denise Villers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="franzxaver.html">
+                        Franz Xaver Winterhalter</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="antonio.html">
+                        Antonio Canova</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="https://www.grandpalais.fr/fr/billetterie"><img class="menu__icone" src="../public/img/icons/tag.svg" alt="painting icone" >
+                        Billetterie</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="contact.html">
+                        Contact</a>
+                </li>
+            </ul>
+
+
+            <div class="menuicon__container">
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+                </a>
+                
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="bulle_contacts">
+                <label class="label" for="name">Nom (obligatoire)</label>
+                <form>
+                    <input class="bulle__dotted2" type="text" id="name" name="name"> 
+                </form>
+            </div>
+            
+            <div class="bulle_contacts">
+                <label class="label" for="email">Email (non obligatoire)</label>
+            
+                <form>
+                    <input class="bulle__dotted2" type="text" id="email" name="email">
+                </form>
+            </div>
+        
+            <div class="bulle_contacts">
+                <label class="label" for="sujet">Sujet (obligatoire)</label>
+                <form>
+                    <input class="bulle__dotted2" type="text" id="sujet" name="sujet">
+                </form>
+            </div>
+            
+            <div class="bulle_contacts">
+                <label class="label" for="message">Message (obligatoire)</label>
+                <form>
+                    <input class="bulle__dotted2" type="text" id="message" name="message">
+                </form>
+            </div>
+            
+            <input class="send__button" type="submit" value="Envoyer">
+        </div>
+    </main>
+
+    <footer>
+        <a class="footer__p" href="contact.html">Contactez-nous</a>
+        <a class="footer__p" href="https://www.grandpalais.fr/fr/billetterie">Billetterie</p>
+        <p class="footer__p">Mentions Légales</p>
+        <div class="menu--separation">
+            <span class="menu__barresep"></span>
+        </div>
+        <p class="footer__p">Suivez-nous</p>
+
+        <div class="footericon__container">
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+            </a>
+            
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
