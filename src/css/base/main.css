@@ -4,3 +4,11 @@
     width:100%;
     height:143px;
 }
+
+main{
+    margin-top:85px;
+}
+
+body{
+    background-color: var(--lightblue);
+}

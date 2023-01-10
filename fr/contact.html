@@ -12,9 +12,9 @@
 
 <body>
     <header class="header"  x-data="{menuIsOpen:false}">
-        <a href="#">
+        <a href="index.html">
             <img class="header__logo-site header__logo" src="../public/img/icons/logo.svg" alt="logo du site"></a>
-        <a class="header__EN" href="../EN/index.html">
+        <a class="header__EN" href="../en/index.html">
             <img class="header__logo-en header__logo" src="../public/img/icons/iconen.svg" alt="icone EN">
         </a>
         <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
@@ -101,32 +101,39 @@
 
     <main>
         <div>
-            <div class="bulle_contacts">
-                <label class="label" for="name">Nom (obligatoire)</label>
+            <div class="form__spacing">
+                <label class="form__label" for="name">Nom (obligatoire)</label>
                 <form>
-                    <input class="bulle__dotted2" type="text" id="name" name="name"> 
+                    <input class="bulle" type="text" id="name" name="name"> 
+                </form>
+            </div>
+
+            <div class="form__spacing">
+                <label class="form__label" for="name">Prénom (obligatoire)</label>
+                <form>
+                    <input class="bulle" type="text" id="name" name="name"> 
                 </form>
             </div>
             
-            <div class="bulle_contacts">
-                <label class="label" for="email">Email (non obligatoire)</label>
+            <div class="form__spacing">
+                <label class="form__label" for="email">Email (Obligatoire)</label>
             
                 <form>
-                    <input class="bulle__dotted2" type="text" id="email" name="email">
+                    <input class="bulle" type="text" id="email" name="email">
                 </form>
             </div>
         
-            <div class="bulle_contacts">
-                <label class="label" for="sujet">Sujet (obligatoire)</label>
+            <div class="form__spacing">
+                <label class="form__label" for="sujet">Sujet (obligatoire)</label>
                 <form>
-                    <input class="bulle__dotted2" type="text" id="sujet" name="sujet">
+                    <input class="bulle" type="text" id="sujet" name="sujet">
                 </form>
             </div>
             
-            <div class="bulle_contacts">
-                <label class="label" for="message">Message (obligatoire)</label>
+            <div class="form__spacing">
+                <label class="form__label" for="message">Message (obligatoire)</label>
                 <form>
-                    <input class="bulle__dotted2" type="text" id="message" name="message">
+                    <input class="bulle" type="text" id="message" name="message">
                 </form>
             </div>
             
@@ -135,8 +142,8 @@
     </main>
 
     <footer>
-        <a class="footer__p" href="contact.html">Contactez-nous</a>
-        <a class="footer__p" href="https://www.grandpalais.fr/fr/billetterie">Billetterie</p>
+        <p class="footer__p"><a class="footer__link" href="contact.html">Contactez-nous</a></p>
+        <p class="footer__p"><a class="footer__link" href="https://www.grandpalais.fr/fr/billetterie">Billetterie</a></p>
         <p class="footer__p">Mentions Légales</p>
         <div class="menu--separation">
             <span class="menu__barresep"></span>
@@ -158,6 +165,10 @@
         
             <a href="#">
                 <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+            </a>
+
+            <a href="http://mmimontbeliard.com/">
+                <img class="menu__icon" src="../public/img/icons/MMI_dut_white_png.svg" alt="mmi icon">
             </a>
         </div>
     </footer>
