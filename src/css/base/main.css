@@ -71,3 +71,9 @@ p{
     display:flex;
     width:100%
 }
+
+/*pas de scroll*/
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
