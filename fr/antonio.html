@@ -100,31 +100,40 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__artiste"> 
-            <img class="img__article" src="../public/img/pagesarticle/antonio.png" alt="image description">
-            <h1 class="h1__position">Antonio Canova</h1>
-            <h2>Biographie </h2>
-                
-            <p>Antonio Canova est un sculpteur et peintre vénitien, né le<strong>1er novembre 1757</strong> à Possagno et mort le <strong>13 octobre 1822</strong> à Venise.
-            </p>
-            <h3>Origines</h3>
-            <p>Né à Possagno, possession de la république de Venise, dans une famille de tailleurs de pierre depuis des générations, il apprend dès son plus jeune âge l'art de la taille du marbre. En 1768, sur la recommandation du sénateur Giovanni Falier, il est placé comme apprenti chez le sculpteur Giuseppe Bernardi, à Pagnano (Asolo), avant d'intégrer l'école Santa Marina à Venise.
-            </p>
-            <h3>Ses études</h3>
-            <p>Après avoir remporté plusieurs prix à l'Académie des beaux-arts de Venise, il y donne successivement plusieurs ouvrages qui le mettent bientôt au premier rang des sculpteurs modernes, et dans lesquels il sait allier l'imitation de la nature avec les beautés idéales à l'antique. </p>
-            <p>Il étudie l'art antique et sculpte, tout au long de sa vie, diverses statues inspirées des mythologies grecque et romaine, ainsi que des cénotaphes, des bustes et des statues en pied de divers personnages célèbres de l'époque. Il est renommé pour la délicatesse de ses sculptures sur marbre. Son œuvre est considérée comme l'archétype de la sculpture néoclassique et a fait l'objet de plusieurs études de Mario Praz.
-            Il consacre une bonne partie de sa fortune que lui valait son art à des activités de bienfaisance ou de soutien à de jeunes artistes ou d'artistes dans le besoin.
-            </p>
-            <h2>La peinture</h2>
-            <p>Il pratique également la peinture avec succès. Appelé plusieurs fois à Paris par Napoléon, il revient en 1815, chargé par le pape de présider à la reconnaissance et à la translation des monuments enlevés à Rome et que réclame le gouvernement pontifical en application des clauses du Congrès de Vienne. Il est chargé de négocier avec Dominique Vivant Denon la restitution, par la France, des œuvres d'art italien volées par l'armée napoléonienne. Il est anobli et reçoit un certain nombre de distinctions honorifiques.                  
-            </p>
-            <p><a href="https://fr.wikipedia.org/wiki/Antonio_Canova"> suite de l'article sur l'artiste ici</a>
-            </p>
-           </section>
-
+        <div  id="onglets" x-data="{ouvert : 1,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__ongletactif" href="#">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="tabhebe.html">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__onglet" href="tabthreegraces.html">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container">       
+                <div class="article article__artiste" role="tabpanel" x-show="ouvert === 1"> 
+                    <img class="img__article" src="../public/img/pagesarticle/antonio.png" alt="image description">
+                    <h1 class="h1__position">Antonio Canova</h1>
+                    <h2>Biographie </h2>
+                        
+                    <p>Antonio Canova est un sculpteur et peintre vénitien, né le<strong>1er novembre 1757</strong> à Possagno et mort le <strong>13 octobre 1822</strong> à Venise.
+                    </p>
+                    <h3>Origines</h3>
+                    <p>Né à Possagno, possession de la république de Venise, dans une famille de tailleurs de pierre depuis des générations, il apprend dès son plus jeune âge l'art de la taille du marbre. En 1768, sur la recommandation du sénateur Giovanni Falier, il est placé comme apprenti chez le sculpteur Giuseppe Bernardi, à Pagnano (Asolo), avant d'intégrer l'école Santa Marina à Venise.
+                    </p>
+                    <h3>Ses études</h3>
+                    <p>Après avoir remporté plusieurs prix à l'Académie des beaux-arts de Venise, il y donne successivement plusieurs ouvrages qui le mettent bientôt au premier rang des sculpteurs modernes, et dans lesquels il sait allier l'imitation de la nature avec les beautés idéales à l'antique. </p>
+                    <p>Il étudie l'art antique et sculpte, tout au long de sa vie, diverses statues inspirées des mythologies grecque et romaine, ainsi que des cénotaphes, des bustes et des statues en pied de divers personnages célèbres de l'époque. Il est renommé pour la délicatesse de ses sculptures sur marbre. Son œuvre est considérée comme l'archétype de la sculpture néoclassique et a fait l'objet de plusieurs études de Mario Praz.
+                    Il consacre une bonne partie de sa fortune que lui valait son art à des activités de bienfaisance ou de soutien à de jeunes artistes ou d'artistes dans le besoin.
+                    </p>
+                    <h2>La peinture</h2>
+                    <p>Il pratique également la peinture avec succès. Appelé plusieurs fois à Paris par Napoléon, il revient en 1815, chargé par le pape de présider à la reconnaissance et à la translation des monuments enlevés à Rome et que réclame le gouvernement pontifical en application des clauses du Congrès de Vienne. Il est chargé de négocier avec Dominique Vivant Denon la restitution, par la France, des œuvres d'art italien volées par l'armée napoléonienne. Il est anobli et reçoit un certain nombre de distinctions honorifiques.                  
+                    </p>
+                    <p><a href="https://fr.wikipedia.org/wiki/Antonio_Canova"> suite de l'article sur l'artiste ici</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer>
