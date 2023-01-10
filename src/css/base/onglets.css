@@ -1,18 +1,23 @@
 div [role="tab"]{
-    cursor:pointer;
-    padding:5px;
-    list-style: none;
-    border:2px solid #464c54;
-    border-radius: 5px;
     display:inline-block;
+    cursor:pointer;
+    padding:5px 15px;
+    border:3px solid #464c54;
+    box-shadow: var(--ombre);
+    background-color: var(--blanc);
+    font-family: var(--font-légende);
+    border-radius: 5px;
+    list-style: none;
 }
-div [role="tab"]:hover{
-    background-color:plum;
+div [role="tab"]:hover, a:hover{
+    background-color:var(--gris-clair);
+    color:var(--blanc);
 }
 
 div [role="tab"].actif{
-    background-color:purple;
-    color:white;
+    background-color:var(--gris-foncé);
+    color:var(--blanc);
+    font-family: var(--font-légende);
 }
 
 

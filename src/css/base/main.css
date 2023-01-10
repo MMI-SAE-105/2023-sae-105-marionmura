@@ -56,6 +56,10 @@ p{
     padding:0 15px;
 }
 
+.a__onglet{
+    text-decoration: none;
+}
+
 /*bulle article*/
 .article{
     background-color: var(--blanc);
