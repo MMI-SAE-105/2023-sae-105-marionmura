@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portait de Charlotte</title>
+
+    <script src="https://unpkg.com/alpinejs" defer></script>    
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <header class="header"  x-data="{menuIsOpen:false}">
+        <a href="index.html">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logo.svg" alt="logo du site"></a>
+        <a class="header__EN" href="../fr/index.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/iconen.svg" alt="icone EN">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
+        </button>
+
+        <nav class="header__menu noscroll menu" x-show="menuIsOpen">                
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="exposition.html"><img class="menu__icone" src="../public/img/icons/peinceau.svg" alt="painting icone" >
+                        Néo-xposition</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="neoclassicisme.html">
+                        Qu'est-ce que le néo-classicisme ?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="frise.html">
+                        Frise des oeuvres</a>
+                </li>
+                <li>
+                    <p></p>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="mariecapet.html">
+                        Marie-Gabrielle Capet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="marievillers.html">
+                        Marie-Denise Villers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="franzxaver.html">
+                        Franz Xaver Winterhalter</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="antonio.html">
+                        Antonio Canova</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="https://www.grandpalais.fr/fr/billetterie"><img class="menu__icone" src="../public/img/icons/tag.svg" alt="painting icone" >
+                        Billetterie</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="contact.html">
+                        Contact</a>
+                </li>
+            </ul>
+
+
+            <div class="menuicon__container">
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+                </a>
+                
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="article_container">       
+            <section class="article article__oeuvre"> 
+            <img class="img__article" src="../public/img/imgfrise/marrievillers.webp" alt="image description">
+            <h1 class="h1__position">Portait de Charlotte </h1>
+            <h2>Pourquoi est-il difficile d’attribuer les tableaux à Marie-Denise Viller ?
+            </h2>
+                
+            <p>Le Portrait de Charlotte du Val d'Ognes (ou Jeune Femme dessinant) est un tableau réalisé en 1801 attribué à la peintre française Marie-Denise Villers. Il fait partie de la collection du Metropolitan Museum of Art de New York. Le tableau a été acquis par le musée en 1922 sous l'attribution à Jacques-Louis David. Plus tard, il fut attribué à Constance-Marie Charpentier et enfin à Villers. Certains historiens de l’art ont suggéré que cette toile serait un autoportrait, mais elle est maintenant considérée par le Metropolitan Museum of Art comme un portrait de Marie Joséphine Charlotte du Val d'Ognes.
+            </p>
+            <h2>Description du tableau</h2>
+            <p>L'œuvre représente une femme dessinant devant une fenêtre brisée. Derrière la femme, un couple se tient sur un parapet. Dans le Concise Dictionary of Women Artists (2001), Valerie Mainz décrit la vitre brisée comme un « tour de force de l'art du peintre distinguant, dans son effet trompe-l'œil, la vue de la scène extérieure comme pouvant être observée seulement en partie à travers le verre ». La salle représentée dans le tableau est en fait une galerie du Louvre, comme l'a découvert l'historienne de l'art Anne Higonnet.</p>
+            
+            <p>À l'époque où le tableau était présumé être celui de David, on supposait que la femme dans le tableau était son élève, le dessinant comme il la peignait11. André Maurois a dit que c'était « une image parfaite, inoubliable ». La critique de l’œuvre avant son attribution à Charpentier était souvent positive.
+            </p>
+            <p><a href="https://fr.wikipedia.org/wiki/Portrait_de_Charlotte_du_Val_d%27Ognes"> suite de l'article sur l'oeuvre' ici</a>
+            </p>
+           </section>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <p class="footer__p"><a class="footer__link" href="contact.html">Contactez-nous</a></p>
+        <p class="footer__p"><a class="footer__link" href="https://www.grandpalais.fr/fr/billetterie">Billetterie</a></p>
+        <p class="footer__p">Mentions Légales</p>
+        <div class="menu--separation">
+            <span class="menu__barresep"></span>
+        </div>
+        <p class="footer__p">Suivez-nous</p>
+
+        <div class="footericon__container">
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+            </a>
+            
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+            </a>
+
+            <a href="http://mmimontbeliard.com/">
+                <img class="menu__icon" src="../public/img/icons/MMI_dut_white_png.svg" alt="mmi icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
