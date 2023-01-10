@@ -1,3 +1,9 @@
 .menu__icon{
     padding:5px;
 }
+
+.img__article{
+    position:relative;
+    display:flex;
+    margin:20px auto;
+}
