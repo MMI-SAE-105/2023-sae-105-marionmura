@@ -7,12 +7,15 @@
 
 main{
     margin-top:100px;
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
 }
 
 body{
     background-color: var(--lightblue);
     width:100%;
-
 }
 
 /*les titres*/
@@ -60,7 +63,7 @@ p{
     padding-bottom:10px;
     margin-top:200px;
     width: 100%;
-    margin-right:0;
+    right:0;
 }
 .article__oeuvre{
     padding-top:100px;
@@ -79,8 +82,3 @@ p{
     width:100%
 }
 
-/*pas de scroll*/
-.noscroll,
-.noscroll body {
-  overflow-y: hidden;
-}

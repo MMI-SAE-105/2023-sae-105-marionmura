@@ -1,8 +1,9 @@
 footer{
     background-color: var(--gris-clair);
-    padding:10px;
+    padding:10px 0 10px 0;
     margin-top:20px;
-    width:100%;
+    width:100wv;
+
 }
 
 .footer__p{
