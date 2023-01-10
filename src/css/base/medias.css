@@ -10,14 +10,14 @@ img{
 
 .img__article{
     position:absolute;
-    top:15px;
+    top:-84px;
     margin: auto;
     padding:15px 29%;
 }
 
 .img__autre{
     position:absolute;
-    top:95px;
+    top:-84px;
     margin: auto;
     padding:15px 26%;
 }
