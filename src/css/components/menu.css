@@ -51,7 +51,7 @@
 .menuicon__container{
     display:flex;
     justify-content:flex-end; 
-    margin-top:180px;
+    margin-top:140px;
     margin-right: 5px;
     align-items: center;
 }
