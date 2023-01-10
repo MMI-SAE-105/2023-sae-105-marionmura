@@ -14,6 +14,7 @@
 
 /*composants*/
 @import "css/components/menu.css";
+@import "css/components/button.css";
 
 /*layout*/
 @import "css/layout/header.css";
