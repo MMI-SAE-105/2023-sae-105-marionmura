@@ -16,4 +16,10 @@
 
 /* Effect styles */
 --ombre:  -1px 3px 2px rgba(65, 73, 104, 0.3);
+
+/* Typography */
+--font-body: 'Source Sans Pro';
+--font-title: 'Catamaran';
+--font-légende:'Indie Flower';
 }
+

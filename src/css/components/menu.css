@@ -8,15 +8,50 @@
     right:0;
     display:flex;
     justify-content: space-between;
-    padding: 70px 20px 150px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
+    padding: 80px 15px 300px ; /*au milieu pour centrer - le dernier pour padding du bas et premier padding du haut*/
     flex-direction: column;
+}
+
+/*mise en forme du menu*/
+ul.menu__list {
+    list-style:none;
+}
+
+.menu__item{
+    line-height:40px;  
+}
+
+
+.menu__link {
+    color: var(--blanc);
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font-body);
+    font-size: var(--h1);
+    font-weight: 400;
+    display: block;
+}
+
+/*span du menu pour séparer*/
+.menu--separation{
+    display:flex;
+    justify-content:space-between; 
+    margin:2px 2px;
+    align-items: center;
+}
+
+.menu__barresep{
+    content: '';
+    background-color: var(--blanc);
+    height: 1px;
+    width:100%;
 }
 
 /*animation icone du menu*/
 .menu__barre{
     content: '';
     background-color: none;
-    height: 3px;
+    height: 2px;
     width:100%;
     border-radius:4px;
     /*position:absolute;*/

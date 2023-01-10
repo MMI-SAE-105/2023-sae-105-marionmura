@@ -7,7 +7,7 @@
     <title>index</title>
 
     <script src="https:////unpkg.com/alpinejs" defer></script>    
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/style.css">
 </head>
 
 <body>
@@ -20,6 +20,64 @@
         <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
                 <span class="menubtn__bar"></span>
         </button>
+
+        <nav class="header__menu menu" x-show="menuIsOpen">                
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="exposition.html"><img class="menu__icone" src="../public/img/icons/peinceau.svg" alt="painting icone" >
+                        Néo-xposition</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="neoclassicisme.html">
+                        Qu'est-ce que le néo-classicisme ?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="frise.html">
+                        Frise des oeuvres</a>
+                </li>
+                <li>
+                    <p></p>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="mariecapet.html">
+                        Marie-Gabrielle Capet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="marievillers.html">
+                        Marie-Denise Villers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="franzxaver.html">
+                        Franz Xaver Winterhalter</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="antonio.html">
+                        Antonio Canova</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="https://www.grandpalais.fr/fr/billetterie"><img class="menu__icone" src="../public/img/icons/tag.svg" alt="painting icone" >
+                        Billetterie</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="contact.html">
+                        Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 </body>
 </html>
