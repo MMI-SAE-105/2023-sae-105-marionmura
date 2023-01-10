@@ -100,30 +100,40 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__artiste"> 
-            <img class="img__article" src="../public/img/pagesarticle/franz.png" alt="image description">
-            <h1 class="h1__position">Franz Xaver Winterhalter</h1>
-            <h2>Biographie </h2>
-                
-            <p>Franz Xaver Winterhalter, né à Menzenschwand, le <strong>20 avril 1805</strong> et mort à Francfort-sur-le-Main, le <strong>8 juillet 1873</strong> (à 68 ans), est un peintre académique et lithographe allemand, ayant vécu principalement en France.
-            Il fut le portraitiste attitré du gotha européen durant le deuxième tiers du xixe siècle.   
-            </p>
-            <h3>Origines</h3>
-            <p>Franz Xaver est né en Forêt-Noire dans l'électorat de Bade, à proximité de Sankt Blasien. Il est le septième des neuf enfants de Fidel Winterhalter (1773–1863), cultivateur, mais aussi vendeur ambulant d'horloges, résinier, tonnelier et juré dans les juridictions locale, voire aubergiste et d'Eva Meyer (1765–1838).
-            </p>
-            <h3>Son enfance et ses études</h3>
-            <p>Il fréquente l'école primaire de Sankt Blasien, où le père Josef Berthold Liber (1781–1854), un ancien moine de l'abbaye Saint-Blaise sécularisée en 1807, découvre ses talents de dessinateur et l'encourage. </p>
-            <p>En 1818, Franz Xaver est envoyé pour quatre ans en apprentissage à Fribourg-en-Brisgau chez Karl Ludwig Schuler (1785–1852), où il est formé au dessin et à la gravure sur cuivre.</p>
-            <h2>Oeuvres postumes</h2>
-            <p>À sa mort, l'œuvre de Marie-Gabrielle Capet tombe dans l'oubli d'autant plus que peu de ses travaux étaient signés et que l'on se souvenait d'elle pour avoir été le modèle d'Adélaïde Labille-Guiard et de François-André Vincent
-            À ceci s’ajoute le fait que les pastels ne sont plus à la mode et que ses tableaux sont dispersés dans des collections privées sans oublier un manque d’intérêt pour les peintures de femmes.   
-            </p>
-            <p><a href="https://fr.wikipedia.org/wiki/Franz_Xaver_Winterhalter"> suite de l'article sur l'artiste ici</a>
-            </p>
-           </section>
-
-        </div>
+        <div  id="onglets" x-data="{ouvert : 1,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__ongletactif" href="franzxaver.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="tabimperatrice.html">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__onglet" href="tabkarljoseph.html">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container">       
+                <div class="article article__artiste" role="tabpanel" x-show="ouvert === 1"> 
+                    <img class="img__article" src="../public/img/pagesarticle/franz.png" alt="image description">
+                    <h1 class="h1__position">Franz Xaver Winterhalter</h1>
+                    <h2>Biographie </h2>
+                        
+                    <p>Franz Xaver Winterhalter, né à Menzenschwand, le <strong>20 avril 1805</strong> et mort à Francfort-sur-le-Main, le <strong>8 juillet 1873</strong> (à 68 ans), est un peintre académique et lithographe allemand, ayant vécu principalement en France.
+                    Il fut le portraitiste attitré du gotha européen durant le deuxième tiers du xixe siècle.   
+                    </p>
+                    <h3>Origines</h3>
+                    <p>Franz Xaver est né en Forêt-Noire dans l'électorat de Bade, à proximité de Sankt Blasien. Il est le septième des neuf enfants de Fidel Winterhalter (1773–1863), cultivateur, mais aussi vendeur ambulant d'horloges, résinier, tonnelier et juré dans les juridictions locale, voire aubergiste et d'Eva Meyer (1765–1838).
+                    </p>
+                    <h3>Son enfance et ses études</h3>
+                    <p>Il fréquente l'école primaire de Sankt Blasien, où le père Josef Berthold Liber (1781–1854), un ancien moine de l'abbaye Saint-Blaise sécularisée en 1807, découvre ses talents de dessinateur et l'encourage. </p>
+                    <p>En 1818, Franz Xaver est envoyé pour quatre ans en apprentissage à Fribourg-en-Brisgau chez Karl Ludwig Schuler (1785–1852), où il est formé au dessin et à la gravure sur cuivre.</p>
+                    <h2>Oeuvres postumes</h2>
+                    <p>À sa mort, l'œuvre de Marie-Gabrielle Capet tombe dans l'oubli d'autant plus que peu de ses travaux étaient signés et que l'on se souvenait d'elle pour avoir été le modèle d'Adélaïde Labille-Guiard et de François-André Vincent
+                    À ceci s’ajoute le fait que les pastels ne sont plus à la mode et que ses tableaux sont dispersés dans des collections privées sans oublier un manque d’intérêt pour les peintures de femmes.   
+                    </p>
+                    <p><a href="https://fr.wikipedia.org/wiki/Franz_Xaver_Winterhalter"> suite de l'article sur l'artiste ici</a>
+                    </p>
+                </div>
+            </div>
+         </div>
         
     </main>
 
