@@ -14,3 +14,11 @@ img{
     margin: auto;
     padding:15px 29%;
 }
+
+.img__autre{
+    position:absolute;
+    top:95px;
+    margin: auto;
+    padding:15px 26%;
+}
+

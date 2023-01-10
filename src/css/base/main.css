@@ -62,7 +62,7 @@ p{
     border-radius:25px;
     padding-bottom:10px;
     margin-top:200px;
-    width: 100%;
+    width: 100wv;
     right:0;
 }
 .article__oeuvre{
@@ -79,6 +79,6 @@ p{
 
 .article__container{
     display:flex;
-    width:100%
+    width:100%;
 }
 
