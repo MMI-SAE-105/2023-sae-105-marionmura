@@ -11,6 +11,8 @@ main{
 
 body{
     background-color: var(--lightblue);
+    width:100%;
+
 }
 
 /*les titres*/

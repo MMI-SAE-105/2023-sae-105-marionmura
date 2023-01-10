@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier de Madame Vincent</title>
+
+    <script src="https://unpkg.com/alpinejs" defer></script>    
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <header class="header"  x-data="{menuIsOpen:false}">
+        <a href="index.html">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logo.svg" alt="logo du site"></a>
+        <a class="header__EN" href="../fr/index.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/iconen.svg" alt="icone EN">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
+        </button>
+
+        <nav class="header__menu noscroll menu" x-show="menuIsOpen">                
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="exposition.html"><img class="menu__icone" src="../public/img/icons/peinceau.svg" alt="painting icone" >
+                        Néo-xposition</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="neoclassicisme.html">
+                        Qu'est-ce que le néo-classicisme ?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="frise.html">
+                        Frise des oeuvres</a>
+                </li>
+                <li>
+                    <p></p>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="mariecapet.html">
+                        Marie-Gabrielle Capet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="marievillers.html">
+                        Marie-Denise Villers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="franzxaver.html">
+                        Franz Xaver Winterhalter</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="antonio.html">
+                        Antonio Canova</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="https://www.grandpalais.fr/fr/billetterie"><img class="menu__icone" src="../public/img/icons/tag.svg" alt="painting icone" >
+                        Billetterie</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="contact.html">
+                        Contact</a>
+                </li>
+            </ul>
+
+
+            <div class="menuicon__container">
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+                </a>
+                
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="article_container">       
+            <section class="article article__oeuvre"> 
+            <img class="img__article" src="../public/img/imgfrise/atelierofmmevincent.webp" alt="image description">
+            <h1 class="h1__position">Atelier de Madame Vincent</h1>
+            <h2>Pourquoi c’est une oeuvre importante ?
+            </h2>
+            <h3>Pourquoi une œuvre de Mme Vincent ?</h3>   
+            <p>Marie-Gabrielle Capet vécut avec sa professeure et logeuse Adélaïde Labille-Guiard toute sa vie, même après le mariage de celle-ci à François-André Vincent en 1800.
+            Lorsqu'elle tombe malade, Marie-Gabrielle Capet prend soin d'elle jusqu'à sa mort en 1803.  
+            </p>
+            <h2>Les miniatures</h2>
+            <p>On recense environ 30 huiles sur toile, 35 pastels et 85 miniatures.
+            À sa mort, l'œuvre de Marie-Gabrielle Capet tombe dans l'oubli d'autant plus que peu de ses travaux étaient signés et que l'on se souvenait d'elle pour avoir été le modèle d'Adélaïde Labille-Guiard et de François-André Vincent1. À ceci s’ajoute le fait que les pastels ne sont plus à la mode et que ses tableaux sont dispersés dans des collections privées sans oublier un manque d’intérêt pour les peintures de femmes.
+            </p>
+            
+            <p>Puisque Marie-Gabrielle Capet vit avec sa maîtresse une bonne part de sa vie, son style en est donc influencé. Elle travaillait également dans l'ombre d'Adélaïde Labille-Guiard et n'a pas eu de vie d'artiste indépendante bien qu'elle put vivre de son art au cours d'une époque qui le permet peu aux femmes.
+            Des recherches récentes sur les femmes artistes ont permis de réhabiliter son œuvre qui se distingue de celle de sa maîtresse par des lumières plus intenses et uniformes. Ses pastels de l'ère post révolutionnaire sont sobres, dans le style de David, voire secs.
+            </p>
+            <p><a href="https://fr.wikipedia.org/wiki/Marie-Denise_Villers"> extrait de l'article sur l'oeuvre ici</a>
+            </p>
+           </section>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <p class="footer__p"><a class="footer__link" href="contact.html">Contactez-nous</a></p>
+        <p class="footer__p"><a class="footer__link" href="https://www.grandpalais.fr/fr/billetterie">Billetterie</a></p>
+        <p class="footer__p">Mentions Légales</p>
+        <div class="menu--separation">
+            <span class="menu__barresep"></span>
+        </div>
+        <p class="footer__p">Suivez-nous</p>
+
+        <div class="footericon__container">
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+            </a>
+            
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+            </a>
+
+            <a href="http://mmimontbeliard.com/">
+                <img class="menu__icon" src="../public/img/icons/MMI_dut_white_png.svg" alt="mmi icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
