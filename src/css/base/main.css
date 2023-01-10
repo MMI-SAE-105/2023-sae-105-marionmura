@@ -66,14 +66,21 @@ p{
 }
 
 /*bulle article*/
-.article{
+.article, .article__autre{
     background-color: var(--blanc);
     border-radius:25px;
     padding-bottom:10px;
-    margin-top:90px;
     width: 100wv;
-    right:0;
 }
+
+.article{
+    margin-top:90px;
+}
+
+.article__autre{
+    margin-top:200px;
+}
+
 .article__oeuvre{
     padding-top:100px;
 }
