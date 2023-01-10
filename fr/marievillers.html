@@ -100,25 +100,34 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__artiste"> 
-            <img class="img__article" src="../public/img/pagesarticle/marievillers.png" alt="image description">
-            <h1 class="h1__position">Marie-Denise Villers</h1>
-            <h2>Biographie </h2>
-            <p>Marie-Denise Villers, née <strong>en 1774</strong> à Paris où elle est morte le <strong>19 aout 1821</strong> est une peintre française.</p>
-            <h3>Enfance et famille</h3>
-            <p>Marie-Denise Villers est issue d’une famille d’artistes. Fille de Charles Lemoine et de Marie-Anne Rousselle, elle vit avec sa famille dans l'ancien 1er arrondissement de Paris, rue Saint-Honoré-Traversière, près du Palais-Royal. Ses sœurs Marie-Victoire Lemoine et Marie-Élisabeth Gabiou sont également des portraitistes accomplies, de même que sa cousine Jeanne-Élisabeth Chaudet. On sait peu de choses sur sa jeunesse, mais il est probable que sa sœur aînée Marie-Victoire et sa cousine Jeanne-Élisabeth ont fait leurs débuts en peinture dès leur 20e année.
-            </p>
-            <h2>Ses distinctions récompensées</h2>
-            <p>En 1794, elle épouse l’étudiant en architecture Michel-Jean-Maximilien Villers. Elle expose trois œuvres au Salon de l’an VII (1799) en tant qu'élève de Girodet. Elle fréquente également les ateliers du baron Gérard et de Jacques-Louis David. Au nombre de ses œuvres présentées au Salon de 1799, on trouve un Portrait d’une femme peintre, auquel est attribué un prix d’encouragement de 1 500 francs, et que certains historiens de l'art ont parfois considéré comme un autoportrait.
-            </p>
-            <p>Elle expose au Salon de 1801 une Étude d’une jeune femme assise à la fenêtre, suivie, en 1802, par un tableau de genre, Un enfant dans son berceau, entraîné par les eaux de l’inondation du mois de Nivôse an X. Sa dernière œuvre connue est un Portrait de la duchesse d’Angoulême, exposé en 1814.</p>
-            <p><a href="https://fr.wikipedia.org/wiki/Marie-Denise_Villers"> suite de l'article sur l'artiste ici</a>
-            </p>
-           </section>
-
+        <div  id="onglets" x-data="{ouvert : 1,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__ongletactif" href="#">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="tabportrcharlotte.html">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__onglet" href="tabportrmmesostras.html">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container">       
+                <div class="article article__artiste" role="tabpanel" x-show="ouvert === 1"> 
+                    <img class="img__article" src="../public/img/pagesarticle/marievillers.png" alt="image description">
+                    <h1 class="h1__position">Marie-Denise Villers</h1>
+                    <h2>Biographie </h2>
+                    <p>Marie-Denise Villers, née <strong>en 1774</strong> à Paris où elle est morte le <strong>19 aout 1821</strong> est une peintre française.</p>
+                    <h3>Enfance et famille</h3>
+                    <p>Marie-Denise Villers est issue d’une famille d’artistes. Fille de Charles Lemoine et de Marie-Anne Rousselle, elle vit avec sa famille dans l'ancien 1er arrondissement de Paris, rue Saint-Honoré-Traversière, près du Palais-Royal. Ses sœurs Marie-Victoire Lemoine et Marie-Élisabeth Gabiou sont également des portraitistes accomplies, de même que sa cousine Jeanne-Élisabeth Chaudet. On sait peu de choses sur sa jeunesse, mais il est probable que sa sœur aînée Marie-Victoire et sa cousine Jeanne-Élisabeth ont fait leurs débuts en peinture dès leur 20e année.
+                    </p>
+                    <h2>Ses distinctions récompensées</h2>
+                    <p>En 1794, elle épouse l’étudiant en architecture Michel-Jean-Maximilien Villers. Elle expose trois œuvres au Salon de l’an VII (1799) en tant qu'élève de Girodet. Elle fréquente également les ateliers du baron Gérard et de Jacques-Louis David. Au nombre de ses œuvres présentées au Salon de 1799, on trouve un Portrait d’une femme peintre, auquel est attribué un prix d’encouragement de 1 500 francs, et que certains historiens de l'art ont parfois considéré comme un autoportrait.
+                    </p>
+                    <p>Elle expose au Salon de 1801 une Étude d’une jeune femme assise à la fenêtre, suivie, en 1802, par un tableau de genre, Un enfant dans son berceau, entraîné par les eaux de l’inondation du mois de Nivôse an X. Sa dernière œuvre connue est un Portrait de la duchesse d’Angoulême, exposé en 1814.</p>
+                    <p><a href="https://fr.wikipedia.org/wiki/Marie-Denise_Villers"> suite de l'article sur l'artiste ici</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer>
