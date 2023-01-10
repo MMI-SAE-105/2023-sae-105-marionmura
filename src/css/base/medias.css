@@ -1,8 +1,16 @@
+img{
+    max-width: 100%;
+    height: auto;
+    display:flex;
+}
+
 .menu__icon{
     padding:5px;
 }
 
 .img__article{
-    margin:0 27%;
-    object-fit: cover;
+    position:absolute;
+    top:95px;
+    margin: auto;
+    padding:15px 29%;
 }
