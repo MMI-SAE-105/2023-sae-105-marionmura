@@ -100,30 +100,39 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__oeuvre"> 
-            <img class="img__article" src="../public/img/imgfrise/empress.webp" alt="image description">
-            <h1 class="h1__position">L'impératrice Eugénie</h1>
-            <h2>Sur l'Impératrice
-            </h2>
-                
-            <p>Elle est surnommée Badinguette par les opposants à l'Empire (en référence au sobriquet donné au futur Empereur à la suite de sa célèbre évasion du fort de Ham, avec le concours d'Henri Conneau, déguisé avec la veste de travail d'un maçon qui portait le nom de Badinguet). Ces opposants prétextent de son âge avancé de vingt-sept ans et de sa beauté qui a fait tourner bien des têtes pour lui faire une mauvaise réputation.
-            </p>
+        <div  id="onglets" x-data="{ouvert : 2,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__onglet" href="franzxaver.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__ongletactif" href="#">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__onglet" href="tabkarljoseph.html">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container" role="tabpanel" x-show="ouvert === 2">       
+                <div class="article article__oeuvre"> 
+                    <img class="img__article" src="../public/img/imgfrise/empress.webp" alt="image description">
+                    <h1 class="h1__position">L'impératrice Eugénie</h1>
+                    <h2>Sur l'Impératrice
+                    </h2>
+                        
+                    <p>Elle est surnommée Badinguette par les opposants à l'Empire (en référence au sobriquet donné au futur Empereur à la suite de sa célèbre évasion du fort de Ham, avec le concours d'Henri Conneau, déguisé avec la veste de travail d'un maçon qui portait le nom de Badinguet). Ces opposants prétextent de son âge avancé de vingt-sept ans et de sa beauté qui a fait tourner bien des têtes pour lui faire une mauvaise réputation.
+                    </p>
 
-            <p>D'une beauté éclatante, elle avait acquis une grande liberté d'allure, était passionnée et séductrice, voire provocante, avec retenue selon les canons de l'époque.
-            </p>
+                    <p>D'une beauté éclatante, elle avait acquis une grande liberté d'allure, était passionnée et séductrice, voire provocante, avec retenue selon les canons de l'époque.
+                    </p>
 
-            <h2>Une miniature...</h2>
+                    <h2>Une miniature...</h2>
 
-            <p>Son culte sentimental pour Marie-Antoinette est illustré par le portrait en robe « à paniers » par Franz Xaver Winterhalter (92,7 x 73,7 cm, Metropolitan Museum of Art, New York) ; son peintre favori exécuta aussi en 1862 le portrait de sa sœur la duchesse d'Albe, et son propre portrait qu'elle offrit à son beau-frère, qui fut placé dans le « salon des Miniatures » du palais Liria à Madrid, où elle aimait se tenir.
-            </p>                   
-            
-            <p><a href="https://fr.wikipedia.org/wiki/Fichier:L%27imp%C3%A9ratrice_Eug%C3%A9nie_%C3%A0_la_Marie-Antoinette,_1854,_Franz_Xaver_Winterhalter.jpg"> extrait de l'article sur l'oeuvre </a>
-            </p>
-           </section>
-
+                    <p>Son culte sentimental pour Marie-Antoinette est illustré par le portrait en robe « à paniers » par Franz Xaver Winterhalter (92,7 x 73,7 cm, Metropolitan Museum of Art, New York) ; son peintre favori exécuta aussi en 1862 le portrait de sa sœur la duchesse d'Albe, et son propre portrait qu'elle offrit à son beau-frère, qui fut placé dans le « salon des Miniatures » du palais Liria à Madrid, où elle aimait se tenir.
+                    </p>                   
+                    
+                    <p><a href="https://fr.wikipedia.org/wiki/Fichier:L%27imp%C3%A9ratrice_Eug%C3%A9nie_%C3%A0_la_Marie-Antoinette,_1854,_Franz_Xaver_Winterhalter.jpg"> extrait de l'article sur l'oeuvre </a>
+                    </p>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer>
