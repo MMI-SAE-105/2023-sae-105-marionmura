@@ -101,7 +101,7 @@
 
     <main>
         <div  id="onglets" x-data="{ouvert : 1,}">
-            <ul role="tablist">
+            <ul role="tablist" class="tablist">
                 <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}">Artiste</li>
                 <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
                     <a class="a__onglet" href="tabmmevincent.html">Oeuvre 1</a></li>
@@ -110,10 +110,10 @@
                     <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
                         <a class="a__onglet" href="frise.html">frise</a></li>
               </ul>
-            <div >       
-                <div class="article article__artiste" class="article_container" role="tabpanel" x-show="ouvert === 1"> 
+            <div class="article_container" >       
+                <div class="article article__artiste" role="tabpanel" x-show="ouvert === 1"> 
                     <img class="img__article" src="../public/img/pagesarticle/marriecapet.png" alt="image description">
-                    <h1 class="h1__position">Marie-Denise Villers</h1>
+                    <h1 class="h1__position">Marie-Gabrielle Capet</h1>
                     <h2>Biographie </h2>
                         
                     <p>Marie-Gabrielle Capet, née le <strong> 6 septembre 1761</strong> à Lyon, morte le <strong>1er novembre 1818</strong> à Paris, est une peintre française de l’École néo-classique.
