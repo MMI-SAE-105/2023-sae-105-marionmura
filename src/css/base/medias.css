@@ -3,7 +3,6 @@
 }
 
 .img__article{
-    position:relative;
-    display:flex;
-    margin:20px auto;
+    margin:0 27%;
+    object-fit: cover;
 }
