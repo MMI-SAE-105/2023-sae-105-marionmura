@@ -13,7 +13,7 @@
 }
 
 /*mise en forme du menu*/
-ul.menu__list {
+.menu__list {
     list-style:none;
 }
 
@@ -46,6 +46,16 @@ ul.menu__list {
     height: 1px;
     width:100%;
 }
+
+/*icones menu bas de page*/
+.menuicon__container{
+    display:flex;
+    justify-content:flex-end; 
+    margin-top:180px;
+    margin-right: 5px;
+    align-items: center;
+}
+
 
 /*animation icone du menu*/
 .menu__barre{
