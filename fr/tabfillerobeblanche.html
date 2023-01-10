@@ -100,27 +100,37 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__oeuvre"> 
-            <img class="img__article" src="../public/img/imgfrise/agirl.webp" alt="image description">
-            <h1 class="h1__position">Portrait de la fille devant un arbre</h1>
-            <h2>Décrire l’oeuvre
-            </h2>
-            <h3>A girl standing before a tree with lilac, in white silk dress with white sash tied in a bow, long dark curling hair, forest and sky background
-            </h3>
-                
-            <p>L'œuvre de Marie-Gabrielle Capet contient une importante collection de portraits miniatures, dont la plupart sont conservés au Louvre. Cette collection comprend des portraits de Madame Martin de Lesseps, de Madame Elisabeth, sœur de Louis XVI, et de Mademoiselle Mars.</p>
+        <div  id="onglets" x-data="{ouvert : 3,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__onglet" href="mariecapet.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="tabmmevincent.html">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__ongletactif" href="#">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container">       
+                <div class="article article__oeuvre" role="tabpanel" x-show="ouvert === 3"> 
+                    <img class="img__article" src="../public/img/imgfrise/agirl.webp" alt="image description">
+                    <h1 class="h1__position">Portrait de la fille devant un arbre</h1>
+                    <h2>Décrire l’oeuvre
+                    </h2>
+                    <h3>A girl standing before a tree with lilac, in white silk dress with white sash tied in a bow, long dark curling hair, forest and sky background
+                    </h3>
+                        
+                    <p>L'œuvre de Marie-Gabrielle Capet contient une importante collection de portraits miniatures, dont la plupart sont conservés au Louvre. Cette collection comprend des portraits de Madame Martin de Lesseps, de Madame Elisabeth, sœur de Louis XVI, et de Mademoiselle Mars.</p>
 
-            <h2>Oeuvre inconnue</h2>
+                    <h2>Oeuvre inconnue</h2>
 
-            <p> Bien que peu de travaux de Capet soient connus, certaines miniatures lui ont été attribuées et sont supposées être d'Elisabeth-Philippine-Marie-Hélène de France, souvent appelée Madame Elisabeth.
-            Madame Elisabeth a également été peinte par Labille-Guiard. La miniature non signée présumée être celle de Madame Elisabeth se trouve au Musée du Louvre. La miniature représente une femme vêtue d'une robe de mousseline blanche et d'une ceinture noire. D'autres miniatures signées Capet ont des inconnus</p>
-                               
-            
-            <p><a href="https://www.wikiart.org/fr/marie-gabrielle-capet-0/a-girl-standing-before-a-tree-with-lilac-in-white-silk-dress-with-white-sash-tied-in-a-bow-long-dark-1811"> extrait de l'article sur l'oeuvre </a>
-            </p>
-           </section>
-
+                    <p> Bien que peu de travaux de Capet soient connus, certaines miniatures lui ont été attribuées et sont supposées être d'Elisabeth-Philippine-Marie-Hélène de France, souvent appelée Madame Elisabeth.
+                    Madame Elisabeth a également été peinte par Labille-Guiard. La miniature non signée présumée être celle de Madame Elisabeth se trouve au Musée du Louvre. La miniature représente une femme vêtue d'une robe de mousseline blanche et d'une ceinture noire. D'autres miniatures signées Capet ont des inconnus</p>
+                                    
+                    
+                    <p><a href="https://www.wikiart.org/fr/marie-gabrielle-capet-0/a-girl-standing-before-a-tree-with-lilac-in-white-silk-dress-with-white-sash-tied-in-a-bow-long-dark-1811"> extrait de l'article sur l'oeuvre </a>
+                    </p>
+                </div>
+            </div>
         </div>
         
     </main>

@@ -100,28 +100,38 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__oeuvre"> 
-            <img class="img__article" src="../public/img/imgfrise/atelierofmmevincent.webp" alt="image description">
-            <h1 class="h1__position">Atelier de Madame Vincent</h1>
-            <h2>Pourquoi c’est une oeuvre importante ?
-            </h2>
-            <h3>Pourquoi une œuvre de Mme Vincent ?</h3>   
-            <p>Marie-Gabrielle Capet vécut avec sa professeure et logeuse Adélaïde Labille-Guiard toute sa vie, même après le mariage de celle-ci à François-André Vincent en 1800.
-            Lorsqu'elle tombe malade, Marie-Gabrielle Capet prend soin d'elle jusqu'à sa mort en 1803.  
-            </p>
-            <h2>Les miniatures</h2>
-            <p>On recense environ 30 huiles sur toile, 35 pastels et 85 miniatures.
-            À sa mort, l'œuvre de Marie-Gabrielle Capet tombe dans l'oubli d'autant plus que peu de ses travaux étaient signés et que l'on se souvenait d'elle pour avoir été le modèle d'Adélaïde Labille-Guiard et de François-André Vincent1. À ceci s’ajoute le fait que les pastels ne sont plus à la mode et que ses tableaux sont dispersés dans des collections privées sans oublier un manque d’intérêt pour les peintures de femmes.
-            </p>
-            
-            <p>Puisque Marie-Gabrielle Capet vit avec sa maîtresse une bonne part de sa vie, son style en est donc influencé. Elle travaillait également dans l'ombre d'Adélaïde Labille-Guiard et n'a pas eu de vie d'artiste indépendante bien qu'elle put vivre de son art au cours d'une époque qui le permet peu aux femmes.
-            Des recherches récentes sur les femmes artistes ont permis de réhabiliter son œuvre qui se distingue de celle de sa maîtresse par des lumières plus intenses et uniformes. Ses pastels de l'ère post révolutionnaire sont sobres, dans le style de David, voire secs.
-            </p>
-            <p><a href="https://fr.wikipedia.org/wiki/Marie-Denise_Villers"> extrait de l'article sur l'oeuvre ici</a>
-            </p>
-           </section>
-
+        <div  id="onglets" x-data="{ouvert : 2,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__onglet" href="mariecapet.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__ongletactif" href="#">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__onglet" href="tabfillerobeblanche.html">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container">       
+                <div class="article article__oeuvre" role="tabpanel" x-show="ouvert === 2"> 
+                    <img class="img__article" src="../public/img/imgfrise/atelierofmmevincent.webp" alt="image description">
+                    <h1 class="h1__position">Atelier de Madame Vincent</h1>
+                    <h2>Pourquoi c’est une oeuvre importante ?
+                    </h2>
+                    <h3>Pourquoi une œuvre de Mme Vincent ?</h3>   
+                    <p>Marie-Gabrielle Capet vécut avec sa professeure et logeuse Adélaïde Labille-Guiard toute sa vie, même après le mariage de celle-ci à François-André Vincent en 1800.
+                    Lorsqu'elle tombe malade, Marie-Gabrielle Capet prend soin d'elle jusqu'à sa mort en 1803.  
+                    </p>
+                    <h2>Les miniatures</h2>
+                    <p>On recense environ 30 huiles sur toile, 35 pastels et 85 miniatures.
+                    À sa mort, l'œuvre de Marie-Gabrielle Capet tombe dans l'oubli d'autant plus que peu de ses travaux étaient signés et que l'on se souvenait d'elle pour avoir été le modèle d'Adélaïde Labille-Guiard et de François-André Vincent1. À ceci s’ajoute le fait que les pastels ne sont plus à la mode et que ses tableaux sont dispersés dans des collections privées sans oublier un manque d’intérêt pour les peintures de femmes.
+                    </p>
+                    
+                    <p>Puisque Marie-Gabrielle Capet vit avec sa maîtresse une bonne part de sa vie, son style en est donc influencé. Elle travaillait également dans l'ombre d'Adélaïde Labille-Guiard et n'a pas eu de vie d'artiste indépendante bien qu'elle put vivre de son art au cours d'une époque qui le permet peu aux femmes.
+                    Des recherches récentes sur les femmes artistes ont permis de réhabiliter son œuvre qui se distingue de celle de sa maîtresse par des lumières plus intenses et uniformes. Ses pastels de l'ère post révolutionnaire sont sobres, dans le style de David, voire secs.
+                    </p>
+                    <p><a href="https://fr.wikipedia.org/wiki/Marie-Denise_Villers"> extrait de l'article sur l'oeuvre ici</a>
+                    </p>
+                </div>
+            </div>
         </div>
         
     </main>

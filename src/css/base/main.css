@@ -60,6 +60,10 @@ p{
     text-decoration: none;
     color:var(--gris-foncé);
 }
+.a__ongletactif{
+    text-decoration: none;
+    color:var(--blanc);
+}
 
 /*bulle article*/
 .article{
