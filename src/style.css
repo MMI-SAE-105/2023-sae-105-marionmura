@@ -1,6 +1,8 @@
 /*fonts*/
 
 /*règles de base*/
+@import "base/main.css";
+@import "base/medias.css";
 
 /* Librairies */
 @import "vendors/normalize.css";
@@ -9,4 +11,8 @@
 @import "utils/variables.css";
 
 /*composants*/
+@import "components/menu.css";
 
+/*layout*/
+@import "layout/header.css";
+@import "layout/footer.css";

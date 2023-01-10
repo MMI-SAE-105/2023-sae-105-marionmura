@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index</title>
 </head>
 <body>
-    <h1>test netlify le site existe bien ?</h1>
+    <header>
+        <a class="header__logo-link" href="#">
+            <img class="header__logo-site header__logo" src="../public/img/icons/peinceau.svg" alt="logo du site"></a>
+        <a class="header__EN" href="../EN/index.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/iconen.svg" alt="icone EN">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
+        </button>
+    </header>
 </body>
 </html>
