@@ -100,26 +100,35 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__oeuvre"> 
-            <img class="img__article" src="../public/img/imgfrise/marrievillers.webp" alt="image description">
-            <h1 class="h1__position">Portait de Charlotte </h1>
-            <h2>Pourquoi est-il difficile d’attribuer les tableaux à Marie-Denise Viller ?
-            </h2>
-                
-            <p>Le Portrait de Charlotte du Val d'Ognes (ou Jeune Femme dessinant) est un tableau réalisé en 1801 attribué à la peintre française Marie-Denise Villers. Il fait partie de la collection du Metropolitan Museum of Art de New York. Le tableau a été acquis par le musée en 1922 sous l'attribution à Jacques-Louis David. Plus tard, il fut attribué à Constance-Marie Charpentier et enfin à Villers. Certains historiens de l’art ont suggéré que cette toile serait un autoportrait, mais elle est maintenant considérée par le Metropolitan Museum of Art comme un portrait de Marie Joséphine Charlotte du Val d'Ognes.
-            </p>
-            <h2>Description du tableau</h2>
-            <p>L'œuvre représente une femme dessinant devant une fenêtre brisée. Derrière la femme, un couple se tient sur un parapet. Dans le Concise Dictionary of Women Artists (2001), Valerie Mainz décrit la vitre brisée comme un « tour de force de l'art du peintre distinguant, dans son effet trompe-l'œil, la vue de la scène extérieure comme pouvant être observée seulement en partie à travers le verre ». La salle représentée dans le tableau est en fait une galerie du Louvre, comme l'a découvert l'historienne de l'art Anne Higonnet.</p>
-            
-            <p>À l'époque où le tableau était présumé être celui de David, on supposait que la femme dans le tableau était son élève, le dessinant comme il la peignait11. André Maurois a dit que c'était « une image parfaite, inoubliable ». La critique de l’œuvre avant son attribution à Charpentier était souvent positive.
-            </p>
-            <p><a href="https://fr.wikipedia.org/wiki/Portrait_de_Charlotte_du_Val_d%27Ognes"> suite de l'article sur l'oeuvre ici</a>
-            </p>
-           </section>
-
+        <div  id="onglets" x-data="{ouvert : 2,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__onglet" href="marievillers.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__ongletactif" href="#">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__onglet" href="tabportrmmesostras.html">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container">       
+                <div class="article article__oeuvre" role="tabpanel" x-show="ouvert === 2"> 
+                    <img class="img__article" src="../public/img/imgfrise/marrievillers.webp" alt="image description">
+                    <h1 class="h1__position">Portait de Charlotte </h1>
+                    <h2>Pourquoi est-il difficile d’attribuer les tableaux à Marie-Denise Viller ?
+                    </h2>
+                        
+                    <p>Le Portrait de Charlotte du Val d'Ognes (ou Jeune Femme dessinant) est un tableau réalisé en 1801 attribué à la peintre française Marie-Denise Villers. Il fait partie de la collection du Metropolitan Museum of Art de New York. Le tableau a été acquis par le musée en 1922 sous l'attribution à Jacques-Louis David. Plus tard, il fut attribué à Constance-Marie Charpentier et enfin à Villers. Certains historiens de l’art ont suggéré que cette toile serait un autoportrait, mais elle est maintenant considérée par le Metropolitan Museum of Art comme un portrait de Marie Joséphine Charlotte du Val d'Ognes.
+                    </p>
+                    <h2>Description du tableau</h2>
+                    <p>L'œuvre représente une femme dessinant devant une fenêtre brisée. Derrière la femme, un couple se tient sur un parapet. Dans le Concise Dictionary of Women Artists (2001), Valerie Mainz décrit la vitre brisée comme un « tour de force de l'art du peintre distinguant, dans son effet trompe-l'œil, la vue de la scène extérieure comme pouvant être observée seulement en partie à travers le verre ». La salle représentée dans le tableau est en fait une galerie du Louvre, comme l'a découvert l'historienne de l'art Anne Higonnet.</p>
+                    
+                    <p>À l'époque où le tableau était présumé être celui de David, on supposait que la femme dans le tableau était son élève, le dessinant comme il la peignait11. André Maurois a dit que c'était « une image parfaite, inoubliable ». La critique de l’œuvre avant son attribution à Charpentier était souvent positive.
+                    </p>
+                    <p><a href="https://fr.wikipedia.org/wiki/Portrait_de_Charlotte_du_Val_d%27Ognes"> suite de l'article sur l'oeuvre ici</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer>
