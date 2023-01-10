@@ -24,7 +24,12 @@
 .header__logo-en{
     position:relative;
     top:27px;
-    margin-right:0;
+    margin-right:4em;
     height:40%;
     cursor: pointer;
+}
+
+.header__menubtn{
+    background-color: var(--gris-foncé);
+    border:0;
 }
