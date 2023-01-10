@@ -102,9 +102,9 @@
     <main>
         <div  id="onglets" x-data="{ouvert : 2,}">
             <ul role="tablist" class="tablist">
-                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__ongletactif" href="antonio.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__onglet" href="antonio.html">Artiste</a></li>
                 <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
-                    <a class="a__onglet" href="#">Oeuvre 1</a></li>
+                    <a class="a__ongletactif" href="#">Oeuvre 1</a></li>
                     <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
                         <a class="a__onglet" href="tabthreegraces.html">Oeuvre 2</a></li>
                     <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">

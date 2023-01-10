@@ -100,26 +100,35 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__mvm"> 
-            <img class="img__article" src="../public/img/imgfrise/3graces.webp" alt="image description">
-            <h1 class="h1__position">The Three Graces</h1>
-            <h2>Détails sur la sculpture
-            </h2>
-                
-            <p>C'est le modèle du marbre de l'Ermitage de Saint-Pétersbourg. Un autre marbre similaire se trouve en Angleterre.
-            </p>
+        <div  id="onglets" x-data="{ouvert : 3,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__onglet" href="antonio.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="tabhebe.html">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__ongletactif" href="#">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container">       
+                <div class="article article__mvm" role="tabpanel" x-show="ouvert === 3"> 
+                    <img class="img__article" src="../public/img/imgfrise/3graces.webp" alt="image description">
+                    <h1 class="h1__position">The Three Graces</h1>
+                    <h2>Détails sur la sculpture
+                    </h2>
+                        
+                    <p>C'est le modèle du marbre de l'Ermitage de Saint-Pétersbourg. Un autre marbre similaire se trouve en Angleterre.
+                    </p>
 
-            <h3>Signification</h3>
-            <p>L'expression est de douceur, d'affection, d'agilité et d'harmonie. Les trois déesses s'embrassent créant un enlacement agréable dans une heureuse modulation de corps avec leurs têtes tournées amoureusement l'une vers l'autre. La délicatesse de leur chair et la douceur de leurs corps agiles en font l'une des œuvres les plus célèbres de Canova.
-            </p>         
-            
-            <p><a href="https://fr.wikipedia.org/wiki/Les_Trois_Gr%C3%A2ces"> pour en lire plus sur l'article de l'oeuvre </a>
-            </p>
-           </section>
-
+                    <h3>Signification</h3>
+                    <p>L'expression est de douceur, d'affection, d'agilité et d'harmonie. Les trois déesses s'embrassent créant un enlacement agréable dans une heureuse modulation de corps avec leurs têtes tournées amoureusement l'une vers l'autre. La délicatesse de leur chair et la douceur de leurs corps agiles en font l'une des œuvres les plus célèbres de Canova.
+                    </p>         
+                    
+                    <p><a href="https://fr.wikipedia.org/wiki/Les_Trois_Gr%C3%A2ces"> pour en lire plus sur l'article de l'oeuvre </a>
+                    </p>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer>
