@@ -100,30 +100,39 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__mvm"> 
-            <img class="img__article" src="../public/img/imgfrise/hebe.webp" alt="image description">
-            <h1 class="h1__position">Hebe</h1>
-            <h2>Détails sur la sculpture
-            </h2>
-                
-            <p>Cette sculpture représente Hébé, la fille de Zeus et d'Héra, alors qu'elle sert du nectar aux dieux. Sa beauté incarne les idéaux canoniques recherchés par les expérimentateurs néoclassiques : le visage éthéré, les lignes fluides des vêtements qui dessinent et caressent son corps, et le geste gracieux de son bras tenant l'amphore s'harmonisent avec le mouvement élégant de la jeune femme, qui semble presque flotter.
-            </p>
+        <div  id="onglets" x-data="{ouvert : 2,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__ongletactif" href="antonio.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="#">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__onglet" href="tabthreegraces.html">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container" >       
+                <div class="article article__mvm" role="tabpanel" x-show="ouvert === 2"> 
+                    <img class="img__article" src="../public/img/imgfrise/hebe.webp" alt="image description">
+                    <h1 class="h1__position">Hebe</h1>
+                    <h2>Détails sur la sculpture
+                    </h2>
+                        
+                    <p>Cette sculpture représente Hébé, la fille de Zeus et d'Héra, alors qu'elle sert du nectar aux dieux. Sa beauté incarne les idéaux canoniques recherchés par les expérimentateurs néoclassiques : le visage éthéré, les lignes fluides des vêtements qui dessinent et caressent son corps, et le geste gracieux de son bras tenant l'amphore s'harmonisent avec le mouvement élégant de la jeune femme, qui semble presque flotter.
+                    </p>
 
-            <h3>Le moulage</h3>
-            <p>Le moulage en plâtre de 1798, considéré comme l'une des pièces les plus précieuses de Pompeo Marchesi, est le modèle original de la statue, à partir duquel les 2 premières reconstructions en marbre ont été réalisées ; ceux-ci sont maintenant conservés à la National Gallery de Berlin et au Musée de l'Ermitage à Saint-Pétersbourg. Deux versions différentes de 1808 de "Ebe" - l'une trouvée dans la collection Devonshire et l'autre à la galerie Pinacoteca Comunale à Forlì - diffèrent le plus significativement dans la structure de support de la statue; dans ceux-ci, le nuage artificiel est remplacé par un simple tronc d'arbre.
-            </p>
+                    <h3>Le moulage</h3>
+                    <p>Le moulage en plâtre de 1798, considéré comme l'une des pièces les plus précieuses de Pompeo Marchesi, est le modèle original de la statue, à partir duquel les 2 premières reconstructions en marbre ont été réalisées ; ceux-ci sont maintenant conservés à la National Gallery de Berlin et au Musée de l'Ermitage à Saint-Pétersbourg. Deux versions différentes de 1808 de "Ebe" - l'une trouvée dans la collection Devonshire et l'autre à la galerie Pinacoteca Comunale à Forlì - diffèrent le plus significativement dans la structure de support de la statue; dans ceux-ci, le nuage artificiel est remplacé par un simple tronc d'arbre.
+                    </p>
 
-            <h3>Une histoire terminée ?</h3>
-            <p>Le plâtre a été détruit lors de l'explosion de la bombe qui a endommagé le PAC et la Villa Reale en 1993. Un processus de restauration minutieux a été effectué pour reconstituer les pièces, reconstituant la sculpture en une seule pièce, supprimant les couches de vernis et révélant le extérieur d'origine du plâtre.
-            </p>                   
-            
-            <p><a href="https://artsandculture.google.com/asset/hebe-antonio-canova/SgF_5YhdL9vP5Q"> traduction de l'article sur l'oeuvre </a>
-            </p>
-           </section>
-
+                    <h3>Une histoire terminée ?</h3>
+                    <p>Le plâtre a été détruit lors de l'explosion de la bombe qui a endommagé le PAC et la Villa Reale en 1993. Un processus de restauration minutieux a été effectué pour reconstituer les pièces, reconstituant la sculpture en une seule pièce, supprimant les couches de vernis et révélant le extérieur d'origine du plâtre.
+                    </p>                   
+                    
+                    <p><a href="https://artsandculture.google.com/asset/hebe-antonio-canova/SgF_5YhdL9vP5Q"> traduction de l'article sur l'oeuvre </a>
+                    </p>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer>
