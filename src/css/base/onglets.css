@@ -1,0 +1,22 @@
+div [role="tab"]{
+    cursor:pointer;
+    padding:5px;
+    list-style: none;
+    border:2px solid #464c54;
+    border-radius: 5px;
+    display:inline-block;
+}
+div [role="tab"]:hover{
+    background-color:plum;
+}
+
+div [role="tab"].actif{
+    background-color:purple;
+    color:white;
+}
+
+
+div [role="tabpanel"]{
+    opacity:1;
+    position:relative;
+}
