@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+
+    <script src="https:////unpkg.com/alpinejs" defer></script>    
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
+
 <body>
-    <header>
-        <a class="header__logo-link" href="#">
-            <img class="header__logo-site header__logo" src="../public/img/icons/peinceau.svg" alt="logo du site"></a>
+    <header class="header"  x-data="{menuIsOpen:false}">
+        <a href="#">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logo.svg" alt="logo du site"></a>
         <a class="header__EN" href="../EN/index.html">
             <img class="header__logo-en header__logo" src="../public/img/icons/iconen.svg" alt="icone EN">
         </a>
