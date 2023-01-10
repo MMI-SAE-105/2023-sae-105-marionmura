@@ -100,23 +100,32 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__oeuvre"> 
-            <img class="img__article" src="../public/img/imgfrise/madamesoustra.webp" alt="image description">
-            <h1 class="h1__position">Portrait présumé de Madame Sostras</h1>
-            <h3>Une étude de femme d’après nature ou Portraitprésumé de Madame Sostras laçant son chausson (1802),
-            </h3>
-                
-            <p>Le Portrait présumé de Madame Sostras laçant son chausson, peint en 1802 par Marie-Denise Villers, clin d'œil à l'Hermès rattachant sa sandale qui est entré au Louvre en 1798, est justement un dépôt du Louvre au Musée de la Chaussure de Romans-sur-Isère. 
-            <p>"Nisa" Villers (Marie-Denise de son nom) était une artiste assez fameuse pour qu'un voyageur anglais, faisant la tournée des ateliers parisiens, lui rende visite sur les conseils d'une peintre anglaise qui séjournait souvent à Paris. Les guides et leurs recommandations n'existaient pas encore.
-            </p>                 
-            
-            <p><a href="https://madame.lefigaro.fr/celebrites/quand-les-peintres-femmes-ont-fait-la-revolution-060421-196039"> extrait de l'article du figaro sur l'oeuvre </a>
-            </p>
-           </section>
-
+        <div  id="onglets" x-data="{ouvert : 3,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__onglet" href="marievillers.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="tabportrcharlotte.html">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__ongletactif" href="#">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container">       
+                <div class="article article__oeuvre" role="tabpanel" x-show="ouvert === 3"> 
+                    <img class="img__article" src="../public/img/imgfrise/madamesoustra.webp" alt="image description">
+                    <h1 class="h1__position">Portrait présumé de Madame Sostras</h1>
+                    <h3>Une étude de femme d’après nature ou Portraitprésumé de Madame Sostras laçant son chausson (1802),
+                    </h3>
+                        
+                    <p>Le Portrait présumé de Madame Sostras laçant son chausson, peint en 1802 par Marie-Denise Villers, clin d'œil à l'Hermès rattachant sa sandale qui est entré au Louvre en 1798, est justement un dépôt du Louvre au Musée de la Chaussure de Romans-sur-Isère. 
+                    <p>"Nisa" Villers (Marie-Denise de son nom) était une artiste assez fameuse pour qu'un voyageur anglais, faisant la tournée des ateliers parisiens, lui rende visite sur les conseils d'une peintre anglaise qui séjournait souvent à Paris. Les guides et leurs recommandations n'existaient pas encore.
+                    </p>                 
+                    
+                    <p><a href="https://madame.lefigaro.fr/celebrites/quand-les-peintres-femmes-ont-fait-la-revolution-060421-196039"> extrait de l'article du figaro sur l'oeuvre </a>
+                    </p>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer>
