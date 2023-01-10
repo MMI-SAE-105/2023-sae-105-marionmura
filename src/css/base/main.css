@@ -58,6 +58,7 @@ p{
 
 .a__onglet{
     text-decoration: none;
+    color:var(--gris-foncé);
 }
 
 /*bulle article*/

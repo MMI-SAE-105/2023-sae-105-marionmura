@@ -105,7 +105,10 @@
                 <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}">Artiste</li>
                 <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
                     <a class="a__onglet" href="tabmmevincent.html">Oeuvre 1</a></li>
-                <li role="tab" @click="ouvert = 3" :class="{'actif':ouvert==3}">Oeuvre 2</li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__onglet" href="tabfillerobeblanche.html">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
               </ul>
             <div >       
                 <div class="article article__artiste" class="article_container" role="tabpanel" x-show="ouvert === 1"> 

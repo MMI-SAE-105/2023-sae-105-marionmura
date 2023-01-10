@@ -2,10 +2,11 @@ div [role="tab"]{
     display:inline-block;
     cursor:pointer;
     padding:5px 15px;
-    border:3px solid #464c54;
+    border:3px solid var(--gris-foncé);
     box-shadow: var(--ombre);
     background-color: var(--blanc);
     font-family: var(--font-légende);
+    font-weight:bold;
     border-radius: 5px;
     list-style: none;
 }
