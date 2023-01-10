@@ -100,25 +100,34 @@
     </header>
 
     <main>
-        <div class="article_container">       
-            <section class="article article__oeuvre"> 
-            <img class="img__article" src="../public/img/imgfrise/franz.webp" alt="image description">
-            <h1 class="h1__position">Karl Joseph Berckmüller</h1>
-            <h2>Le Style de l'oeuvre</h2>
-                
-            <p>Dans les premiers tableaux de la famille du grand-duc de Bade déjà, Winterhalter exprime certains éléments typique du style Biedermeyer auquel il est formé, caractérisé par une figuration réaliste du modèle et une attention méticuleuse à la toilette et des accessoires.
-            </p>
+        <div  id="onglets" x-data="{ouvert : 3,}">
+            <ul role="tablist" class="tablist">
+                <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}"><a class="a__onglet" href="franzxaver.html">Artiste</a></li>
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="tabimperatrice.html">Oeuvre 1</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                        <a class="a__ongletactif" href="#">Oeuvre 2</a></li>
+                    <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==4}">
+                        <a class="a__onglet" href="frise.html">frise</a></li>
+              </ul>
+            <div class="article_container" role="tabpanel" x-show="ouvert === 3">       
+                <div class="article article__oeuvre"> 
+                    <img class="img__article" src="../public/img/imgfrise/franz.webp" alt="image description">
+                    <h1 class="h1__position">Karl Joseph Berckmüller</h1>
+                    <h2>Le Style de l'oeuvre</h2>
+                        
+                    <p>Dans les premiers tableaux de la famille du grand-duc de Bade déjà, Winterhalter exprime certains éléments typique du style Biedermeyer auquel il est formé, caractérisé par une figuration réaliste du modèle et une attention méticuleuse à la toilette et des accessoires.
+                    </p>
 
-            <h2>Une influence précoce</h2>
-            <p>Il se montre en cela influencé par son maître Josephe Karl Stieler et comme lui, peint avec un fini très poussé. Comme Stieler, Winterhalter insiste sur certains détails exécutés avec grand soin, tels que les coiffures plus ou moins complexes, les châles dont il rend le précieux de l'étoffe, les bijoux et ornements des femmes rendu dans leurs moindres détails, comme la précision dans les décorations et médailles militaires pour les hommes, la qualité des étoffes, la finesse des chaussures, le raffinement des chapeaux.
-            </p>              
-            
-            <p><a href="https://fr.wikipedia.org/wiki/Franz_Xaver_Winterhalter"> extrait de l'article sur l'oeuvre </a>
-            </p>
-           </section>
-
+                    <h2>Une influence précoce</h2>
+                    <p>Il se montre en cela influencé par son maître Josephe Karl Stieler et comme lui, peint avec un fini très poussé. Comme Stieler, Winterhalter insiste sur certains détails exécutés avec grand soin, tels que les coiffures plus ou moins complexes, les châles dont il rend le précieux de l'étoffe, les bijoux et ornements des femmes rendu dans leurs moindres détails, comme la précision dans les décorations et médailles militaires pour les hommes, la qualité des étoffes, la finesse des chaussures, le raffinement des chapeaux.
+                    </p>              
+                    
+                    <p><a href="https://fr.wikipedia.org/wiki/Franz_Xaver_Winterhalter"> extrait de l'article sur l'oeuvre </a>
+                    </p>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer>
