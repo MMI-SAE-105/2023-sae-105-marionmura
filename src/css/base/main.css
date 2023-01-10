@@ -5,6 +5,9 @@
     height:143px;
 }
 
+.expo__position{
+    padding:1em 0;
+}
 main{
     margin-top:100px;
     width:100%;
@@ -48,7 +51,7 @@ h3{
     margin-bottom:5px;
     padding:0 15px;
 }
-
+/*styles p*/
 p{
     font-family: var(--font-body);
     font-size: var(--body);
@@ -56,6 +59,15 @@ p{
     padding:0 15px;
 }
 
+.expo__p{
+    text-align: center;
+    margin-top:15px;
+    color:var(--blanc);
+    font-family: var(--font-title);
+    font-size:var(--h1);
+}
+
+/*style liens */
 .a__onglet{
     text-decoration: none;
     color:var(--gris-foncé);
