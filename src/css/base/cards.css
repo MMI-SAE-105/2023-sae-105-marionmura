@@ -12,6 +12,7 @@
     color:var(--gris-foncé);
     font-family: var(--font-body);
     text-align: center;
+    padding:15px 0;
 }
 
 .alignement__droite{

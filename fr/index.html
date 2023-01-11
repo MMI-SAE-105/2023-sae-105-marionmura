@@ -162,21 +162,25 @@
                     </div>
             </div>
         </div>
-        <div class="cards">
-            <a href="mariecapet.html">
+        <div class="cards" x-data="{cardOpen:2}">
+            <div @click="cardOpen =1">
                 <img class="center__img--cards" src="../public/img/cards_index/mariecapet.webp" alt="img marie gabrielle capet">
-                <div>
-                    <p class="nomartiste__centré">Marie-Gabrielle Capet (1761-1818)</p>
-                    <p class="alignement__droite">en lire plus</p>
+                <p class="nomartiste__centré"> Marie-Gabrielle Capet (1761-1818)</p>
+                <div x-show="cardOpen===1">
+                    <p >Marie-Gabrielle Capet, née le 6 septembre 1761 à Lyon, morte le 1er novembre 1818 à Paris, est une peintre française de l’École néo-classique.</p>
                 </div>
-            </a>
+                <a  href="mariecapet.html">
+                    <p class="alignement__droite">en lire plus</p>
+                </a>
+            </div>
         </div>
         <div class="cards">
-            <a href="marievillers.html">
+            <a @click="cardOpen =2" href="marievillers.html">
                 <img class="center__img--cards" src="../public/img/cards_index/marievillers.webp" alt="img marie gabrielle capet">
                 <div>
                     <p class="nomartiste__centré">Marie-Denise Villers (1774 1821)</p>
                     <p class="alignement__droite">en lire plus</p>
+                    <p x-show="cardOpen===2">Marie-Denise Villers, née en 1774 à Paris où elle est morte le 19 aout 1821 est une peintre française.</p>
                 </div>
             </a>
         </div>
