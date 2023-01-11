@@ -16,16 +16,16 @@
 }
 
 .header__logo-site{
-    width:90%;
+    width:70%;
     height:auto;
-    margin:10px 15px;
+    margin:5px 15px;
 }
 
 .header__logo-en{
     position:relative;
-    top:27px;
+    top:15px;
     margin-right:4em;
-    height:40%;
+    height:50%;
     cursor: pointer;
 }
 
