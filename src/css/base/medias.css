@@ -25,3 +25,7 @@ img{
 .center__img{
     margin:50px auto 0 auto;
 }
+
+.center__img--card{
+    margin:0 auto;
+}

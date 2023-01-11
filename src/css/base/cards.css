@@ -1,0 +1,16 @@
+.cards{
+    background-color: var(--blanc);
+    border:solid 1px var(--gris-foncé);
+    border-radius:5px;
+    width:240px;
+    display: flex;
+    margin:0 auto;
+}
+.nomartiste__centré{
+    text-decoration: none;
+    color:var(--gris-foncé);
+}
+
+.alignement__droite{
+    justify-content: flex-end;
+}
