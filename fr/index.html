@@ -100,18 +100,17 @@
     </header>
 
     <main>
-        <section class="expo">
+        <div class="expo">
             <div class="expo__position">
                 <p class="expo__p">Néo-exposition du 13 avril au 23 juin 2021</p>
                 <p class="expo__p">Réservez votre entrée sans plus tarder !</p>
             </div>
-            <div class="button__position">
-                <button class="button">
-                    <a class="expo__link" href="exposition.html"><p>Plus d'info sur les tarifs </p>
-                    <p>et les horaires ici</p></a>
-                </button>
+            <div class="button__position button">
+                <a class="expo__link" href="exposition.html">
+                    <p>Plus d'info sur les tarifs et les horaires ici</p>
+                </a>
             </div>
-        </section>
+        </div>
 
         <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
             <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt;</button>
