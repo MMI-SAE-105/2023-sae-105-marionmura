@@ -57,7 +57,7 @@ p{
     font-family: var(--font-body);
     font-size: var(--body);
     margin-top:5px;
-    padding:0 15px;
+    padding:0 10px;
 }
 
 .expo__p{
@@ -73,7 +73,7 @@ p{
     text-decoration: none;
     color:var(--gris-foncé);
 }
-.a__ongletactif{
+.a__ongletactif, .expo__link{
     text-decoration: none;
     color:var(--blanc);
 }
