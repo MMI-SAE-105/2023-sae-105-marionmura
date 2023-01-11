@@ -25,5 +25,6 @@
 }
 
 .frise::before{
+    top:0;
     left:-9px;
 }
