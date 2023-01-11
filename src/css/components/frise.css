@@ -1,0 +1,9 @@
+.frise{
+    content:"";
+    display:block;
+    position:absolute;
+    background-color: var(--rouge);
+    margin:0 45%;
+    width:5px;
+    height:200vh;
+}

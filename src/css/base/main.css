@@ -134,4 +134,5 @@ p{
 
 .légendes{
     font-family: var(--font-légende);
+    width:70%;
 }
