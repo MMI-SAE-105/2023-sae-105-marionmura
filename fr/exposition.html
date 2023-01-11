@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Exposition</title>
 
     <script src="https://unpkg.com/alpinejs" defer></script>    
     <link rel="stylesheet" href="../src/style.css">
@@ -163,41 +163,57 @@
             <p> ... et bien d’autres artistes encore  ...
             </p>
         </div>
-        <div class="cards">
-            <a href="mariecapet.html">
-                <img class="center__img--cards" src="../public/img/cards_index/mariecapet.webp" alt="img marie gabrielle capet">
-                <div>
-                    <p class="nomartiste__centré">Marie-Gabrielle Capet (1761-1818)</p>
-                    <p class="alignement__droite">en lire plus</p>
+        <div x-data="{cardOpen:1}">
+            <div class="cards">
+                <div @click="cardOpen =1">
+                    <img class="center__img--cards" src="../public/img/cards_index/mariecapet.webp" alt="img marie gabrielle capet">
+                    <p class="nomartiste__centré"> Marie-Gabrielle Capet (1761-1818)</p>
+                    <div x-show="cardOpen===1">
+                        <p >Marie-Gabrielle Capet, née le 6 septembre 1761 à Lyon, morte le 1er novembre 1818 à Paris, est une peintre française de l’École néo-classique.</p>
+                    </div>
+                    <a  href="mariecapet.html">
+                        <p class="alignement__droite">en lire plus</p>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="cards">
-            <a href="marievillers.html">
-                <img class="center__img--cards" src="../public/img/cards_index/marievillers.webp" alt="img marie gabrielle capet">
-                <div>
-                    <p class="nomartiste__centré">Marie-Denise Villers (1774 1821)</p>
-                    <p class="alignement__droite">en lire plus</p>
+            </div>
+            <div class="cards">
+                <div @click="cardOpen =2">
+                    <img class="center__img--cards" src="../public/img/cards_index/marievillers.webp" alt="img marie denise villers">
+                    <p class="nomartiste__centré"> Marie-Denise Villers (1774 1821)</p>
+                    <div x-show="cardOpen===2">
+                        <p >Marie-Denise Villers, née en 1774 à Paris où elle est morte le 19 aout 1821 est une peintre française.</p>
+                    </div>
+                    <a  href="marievillers.html">
+                        <p class="alignement__droite">en lire plus</p>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="cards">
-            <a href="franzxaver.html">
-                <img class="center__img--cards" src="../public/img/cards_index/franzxaver.webp" alt="img marie gabrielle capet">
-                <div>
-                    <p class="nomartiste__centré">Franz Xaver Winterhalter (1805-1873)</p>
-                    <p class="alignement__droite">en lire plus</p>
+            </div>
+            <div class="cards">
+                <div @click="cardOpen =3">
+                    <img class="center__img--cards" src="../public/img/cards_index/franzxaver.webp" alt="img franz xaver">
+                    <p class="nomartiste__centré"> Franz Xaver Winterhalter (1805-1873)</p>
+                    <div x-show="cardOpen===3">
+                        <p >Franz Xaver Winterhalter, né à Menzenschwand, le 20 avril 1805 et mort à Francfort-sur-le-Main, le 8 juillet 1873 (à 68 ans), est un peintre académique et lithographe allemand, ayant vécu principalement en France.
+                        </p>
+                    </div>
+                    <a  href="franzxaver.html">
+                        <p class="alignement__droite">en lire plus</p>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="cards">
-            <a href="antonio.html">
-                <img class="center__img--cards" src="../public/img/cards_index/antonio.webp" alt="img marie gabrielle capet">
-                <div>
-                    <p class="nomartiste__centré">Antonio Canova (1757-1802)</p>
-                    <p class="alignement__droite">en lire plus</p>
+            </div>
+            <div class="cards">
+                <div @click="cardOpen =4">
+                    <img class="center__img--cards" src="../public/img/cards_index/antonio.webp" alt="img antonio canova">
+                    <p class="nomartiste__centré"> Antonio Canova (1757-1802)</p>
+                    <div x-show="cardOpen===4">
+                        <p >Antonio Canova est un sculpteur et peintre vénitien, né le 1er novembre 1757 à Possagno et mort le 13 octobre 1822 à Venise.
+                        </p>
+                    </div>
+                    <a  href="antonio.html">
+                        <p class="alignement__droite">en lire plus</p>
+                    </a>
                 </div>
-            </a>
+            </div>
         </div>
     </main>
 
