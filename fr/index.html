@@ -113,37 +113,56 @@
             </div>
         </section>
 
-        <section class="carrousel">
-            <a href="">
-                <img src="../public/img/imgfrise/hebe.webp" alt="hebe">
-            </a>
-            <a  href="">
-                <img src="../public/img/imgfrise/empress.webp" alt="empress eugenie">
-            </a>
-           
-            <a href="">
-                <img src="../public/img/imgfrise/agirl.webp" alt="a girl">
-            </a>
-            <a href="">
-                <img src="../public/img/imgfrise/atelierofmmevincent.webp" alt="atelier of mme vincent">
-            </a>
-            <a href="">
-                <img src="../public/img/imgfrise/franz.webp" alt="karl joseph">
-            </a>
-            <a href="">
-                <img src="../public/img/imgfrise/madamesoustra.webp" alt="madame soustrat">
-            </a>
-            <a href="">
-                <img src="../public/img/imgfrise/marrievillers.webp" alt="marrie villers">
-            </a>
-            <a href="">
-                <img src="../public/img/imgfrise/3graces.webp" alt="the three graces">
-            </a>
-            <a href="">
-                <img src="../public/img/imgfrise/princessprussie.webp" alt="princesse de prussie">
-            </a>
-            
-        </section>
+        <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+            <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt;</button>
+            <button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children]
+                .find(e=>e.getBoundingClientRect().x>=0)
+                .id">
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <a href ="tabhebe.html">
+                            <img src="../public/img/imgfrise/hebe.webp" alt="hebe">
+                        </a>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <a  href="tabimperatrice.html">
+                             <img src="../public/img/imgfrise/empress.webp" alt="empress eugenie">
+                        </a>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <a href="tabfillerobeblanche.html">
+                            <img src="../public/img/imgfrise/agirl.webp" alt="a girl">
+                        </a>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran"></div>
+                        <a href="tabmmevincent.html">
+                            <img src="../public/img/imgfrise/atelierofmmevincent.webp" alt="atelier of mme vincent">
+                        </a>
+                    </div>
+                    <div id="ecran-5" class="carrousel_ecran">
+                        <a href="tabkarljoseph.html">
+                            <img src="../public/img/imgfrise/franz.webp" alt="karl joseph">
+                        </a>
+                    </div>
+                    <div id="ecran-6" class="carrousel_ecran">
+                        <a href="tabportrmmesostras.html">
+                            <img src="../public/img/imgfrise/madamesoustra.webp" alt="madame soustrat">
+                        </a>
+                    </div>
+                    <div id="ecran-7" class="carrousel_ecran">
+                        <a href="tabportrcharlotte.html">
+                            <img src="../public/img/imgfrise/marrievillers.webp" alt="marrie villers">
+                        </a>
+                    </div>
+                    <div id="ecran-8" class="carrousel_ecran">
+                        <a href="tabthreegraces.html">
+                            <img src="../public/img/imgfrise/3graces.webp" alt="the three graces">
+                        </a>
+                    </div>
+            </div>
+        </div>
     </main>
 
     <footer>
