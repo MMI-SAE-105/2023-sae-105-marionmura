@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <script src="https://unpkg.com/alpinejs" defer></script>    
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <header class="header"  x-data="{menuIsOpen:false}">
+        <a href="#">
+            <img class="header__logo-site header__logo" src="../public/img/icons/logo.svg" alt="logo du site"></a>
+        <a class="header__EN" href="../fr/index.html">
+            <img class="header__logo-en header__logo" src="../public/img/icons/iconen.svg" alt="icone EN">
+        </a>
+        <button class="header__menubtn menubtn" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+                <span class="menubtn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu" x-show="menuIsOpen">                
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="exposition.html"><img class="menu__icone" src="../public/img/icons/peinceau.svg" alt="painting icone" >
+                        Néo-xposition</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="neoclassicisme.html">
+                        Qu'est-ce que le néo-classicisme ?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="frise.html">
+                        Frise des oeuvres</a>
+                </li>
+                <li>
+                    <p></p>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="mariecapet.html">
+                        Marie-Gabrielle Capet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="marievillers.html">
+                        Marie-Denise Villers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="franzxaver.html">
+                        Franz Xaver Winterhalter</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="antonio.html">
+                        Antonio Canova</a>
+                </li>
+            </ul>
+
+            <div class="menu--separation">
+                <span class="menu__barresep"></span>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="https://www.grandpalais.fr/fr/billetterie"><img class="menu__icone" src="../public/img/icons/tag.svg" alt="painting icone" >
+                        Billetterie</a>
+                </li>
+                <li>
+                    <a class="menu__link" href="contact.html">
+                        Contact</a>
+                </li>
+            </ul>
+
+
+            <div class="menuicon__container">
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+                </a>
+                
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+                </a>
+            
+                <a href="#">
+                    <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="expo">
+            <div class="expo__position">
+                <p class="expo__p">Néo-exposition du 13 avril au 23 juin 2021</p>
+                <p class="expo__p">Réservez votre entrée sans plus tarder !</p>
+            </div>
+            
+        </div>
+        <div class="bulle__expo">
+            <p>
+                Néo-xposition entre le 13 avril et le 23 juin 2021</p>
+
+            <p>Retrouvez-nous ici : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+            <p>Horaires d’ouverture : 
+                Tous les jours de 11h à 20h, sauf le lundi. 
+                Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+            <p class="texterouge">Tarifs :</p>
+            <ul>
+                <li>
+                    <p>Plein tarif ⇒ 
+                    <span class="textrouge">11€</span></p>
+                </li>
+                <li>
+                    <p>Tarif réduit ⇒ 
+                    <span class="textrouge">7,50€</span></p>
+                </li>
+                <li>
+                    <p>Réduction 13 - 25 ans ⇒ 
+                    <span class="textrouge">5€</span></p>
+                </li>
+                <li>
+                    <p>Fondation Cartier Pass ⇒
+                    <span class="textrouge">18€ - 50€</span></p>
+                </li>
+                <li>
+                    <p>Moins de 13 ans, 
+                        Laissez-passer annuel, 
+                        carte Icom, 
+                        carte de presse, 
+                        carte d'invalidité, 
+                        Fondation Cartier Pass, 
+                        Etudiants</p>
+                    <p class="textrouge">Gratuit</p>
+                    </p>
+                </li>
+            </ul>
+            
+            <div class="button__position button">
+                <a class="expo__link" href="exposition.html">
+                    <p>Billetterie</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="cards">
+            <a href="mariecapet.html">
+                <img class="center__img--cards" src="../public/img/cards_index/mariecapet.webp" alt="img marie gabrielle capet">
+                <div>
+                    <p class="nomartiste__centré">Marie-Gabrielle Capet (1761-1818)</p>
+                    <p class="alignement__droite">en lire plus</p>
+                </div>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="marievillers.html">
+                <img class="center__img--cards" src="../public/img/cards_index/marievillers.webp" alt="img marie gabrielle capet">
+                <div>
+                    <p class="nomartiste__centré">Marie-Denise Villers (1774 1821)</p>
+                    <p class="alignement__droite">en lire plus</p>
+                </div>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="franzxaver.html">
+                <img class="center__img--cards" src="../public/img/cards_index/franzxaver.webp" alt="img marie gabrielle capet">
+                <div>
+                    <p class="nomartiste__centré">Franz Xaver Winterhalter (1805-1873)</p>
+                    <p class="alignement__droite">en lire plus</p>
+                </div>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="antonio.html">
+                <img class="center__img--cards" src="../public/img/cards_index/antonio.webp" alt="img marie gabrielle capet">
+                <div>
+                    <p class="nomartiste__centré">Antonio Canova (1757-1802)</p>
+                    <p class="alignement__droite">en lire plus</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer__p"><a class="footer__link" href="contact.html">Contactez-nous</a></p>
+        <p class="footer__p"><a class="footer__link" href="https://www.grandpalais.fr/fr/billetterie">Billetterie</a></p>
+        <p class="footer__p">Mentions Légales</p>
+        <div class="menu--separation">
+            <span class="menu__barresep"></span>
+        </div>
+        <p class="footer__p">Suivez-nous</p>
+
+        <div class="footericon__container">
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+            </a>
+            
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+            </a>
+
+            <a href="http://mmimontbeliard.com/">
+                <img class="menu__icon" src="../public/img/icons/MMI_dut_white_png.svg" alt="mmi icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

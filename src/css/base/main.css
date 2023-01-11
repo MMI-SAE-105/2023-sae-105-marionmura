@@ -111,3 +111,12 @@ p{
     width:100%;
 }
 
+.bulle__expo{
+    background-color: var(--blanc);
+    margin-top:-5px;
+    border-radius:0 0 25px 25px;
+}
+
+.textrouge{
+    color:var(--rouge);
+}
