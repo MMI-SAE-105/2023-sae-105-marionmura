@@ -4,6 +4,7 @@
 - URL du site :http://neocc.marionmura.fr/ 
 - URL FIGMA : https://www.figma.com/file/iM94JAHIzFSJFlUMkIlurf/SAE-105-(2022)---Marion-MURA?node-id=322%3A1210&t=6yZMJzIThXXldM17-1
 
+rapport de lighthouse : https://neocc.marionmura.fr/report_lighthouse.html
 
 # Structure de départ pour la SAE 105.
 
