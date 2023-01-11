@@ -68,6 +68,10 @@ p{
     font-size:var(--h1);
 }
 
+.p__espacement--avant{
+    padding-top:15px;
+}
+
 /*style liens */
 .a__onglet {
     text-decoration: none;
@@ -115,6 +119,12 @@ p{
     background-color: var(--blanc);
     margin-top:-5px;
     border-radius:0 0 25px 25px;
+}
+
+.bulle__padding{
+    margin-top:1em;
+    padding:5px ;
+    border-radius:15px;
 }
 
 .textrouge{
