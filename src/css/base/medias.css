@@ -29,3 +29,8 @@ img{
 .center__img--card{
     margin:0 auto;
 }
+
+.img__alignement{
+    flex:none;
+    margin:5px;
+}
