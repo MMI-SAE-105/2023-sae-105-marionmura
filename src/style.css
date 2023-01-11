@@ -6,6 +6,7 @@
 @import "css/base/medias.css";
 @import "css/base/onglets.css";
 @import "css/base/carrousel.css";
+@import "css/base/cards.css";
 
 /* Librairies */
 @import "css/vendors/normalize.css";
