@@ -8,8 +8,4 @@
 
   [[plugins.inputs.audits]]
     output_path = "reports/frise.html"
-    path = "frise.html" #le chemin du fichier à tester
-    
-  [[plugins.inputs.audits]]
-    output_path = "reports/sous-dossier/autre.html"
-    path = "/sous-dossier/autre.html"
+    path = "FR/frise.html" #le chemin du fichier à tester
