@@ -1,0 +1,40 @@
+.carrousel_parent-ecrans{
+    display:flex;
+    width:100%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory; /*evite de deborder l'image*/
+
+}
+
+.carrousel_ecran{
+    width:100%;
+    flex:none;
+    scroll-snap-align: start;
+}
+
+.carrousel {
+    position: relative;
+}
+
+.carrousel_btn {
+    position: absolute;
+    top: 50%; /* centre verticalement */
+    transform: translateY(-50%); /* methode du point mort */
+    width: 2rem;
+    height: 2rem;
+    background: rgba(65, 73, 104, 0.5);
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: var(--blanc);
+}
+
+.carrousel_btn-avant {
+    left: 0;
+}
+  
+  .carrousel_btn-apres {
+    right: 0;
+}
