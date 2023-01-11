@@ -4,7 +4,7 @@
     position:absolute;
     background-color: var(--rouge);
     margin:30px 45%;
-    width:5px;
+    width:2px;
     height:200%;
 }
 
@@ -14,17 +14,35 @@
     position:absolute;
     background-color: var(--rouge);
     border-radius: 50%;
-    width:25px;
-    height:25px;
+    width:15px;
+    height:15px;
     align-items: center;
 }
 
 .frise::after{
     bottom:0;
-    right:-9px;
+    right:-6px;
 }
 
 .frise::before{
     top:0;
-    left:-9px;
+    left:-6px;
+}
+
+.frise--horizontal-droite, .frise--horizontal-gauche{
+    content:"";
+    display:block;
+    position:absolute;
+    background-color: var(--rouge);
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+}
+
+.frise--horizontal-droite{
+    margin:0 50%;
+}
+
+.frise--horizontal-gauche{
+    margin:5px 35% ;
 }
